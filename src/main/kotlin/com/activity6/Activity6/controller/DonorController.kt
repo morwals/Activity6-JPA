@@ -25,7 +25,7 @@ class DonorController(@Autowired val donorService: DonorService ,@Autowired val 
         return donorRepository.save(donor)
     }
 
-    @GetMapping("/getInfo")
+    @GetMapping("/joinInfo")
     fun getJoinInformation(): List<Response?>? {
         return donorRepository.joinInformation
 

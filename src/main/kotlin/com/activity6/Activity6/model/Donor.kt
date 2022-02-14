@@ -20,6 +20,6 @@ data class Donor(
 
 
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.LAZY)
-    @JoinColumn(name = "cp_fk2", referencedColumnName = "id")
+    @JoinColumn(name = "fk2", referencedColumnName = "id")
     var bloodbank: MutableList<BloodBank>
 )
